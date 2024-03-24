@@ -1,0 +1,117 @@
+/*headings*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/*navgation*/
+.topnav {
+    background-color: transparent; /*  background color */
+    overflow: hidden; /* Clip content to prevent horizontal overflow */
+    position:relative; /* Fix the navbar to the top of the page */
+    top: 0;
+    width: 100%; /* Make the navbar full width */
+    padding: 10px 20px; /* Add some padding for spacing */
+  }
+  
+  .topnav a {
+    float: left; /* Float links to the left */
+    color: black; /* White text color */
+    text-align: center; /* Center text within links */
+    padding: 14px 16px; /* Add some padding to links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 17px; /* Set font size for links */
+  }
+  
+  .topnav a.active { /* Style for the active link */
+    background-color: #ddd; /* background for active link */
+    color: black; /* text color for active link */
+  }
+  
+  .topnav a:hover:not(.active) { /* Hover effect for non-active links */
+    background-color: #ddd; /*  background on hover */
+    color: black; /*  text color on hover */
+  }
+  
+/*row & col*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin: 05px;
+    text-align: center;
+}
+/* club image*/
+.img1 {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+  .img1:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }  
+/*footer*/
+/* Overall footer styles */
+.footer {
+    background-color: transparent; /* color background */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center content horizontally */
+  }
+  
+  /* Footer copyright styles */
+  .footer-copyright {
+    font-size: 12px; /* Smaller copyright text */
+    color: black; /*  copyright text color */
+    margin-top: 10px; 
+  }
+ 
+/* table fpr contact.html*/
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+  
+  tr:hover {background-color: #D6EEEE;}
+
+/*social media icon clubs*/
+  .social-icons {
+  display: inline;
+  align-items: center;
+  }
+  .social-icons img {
+    width: 30px;
+    margin: 3px;
+} .feesocial-icons {
+  display: flex;
+  align-items: center;
+}
+
+.feesocial-icons a {
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.feesocial-icons img {
+  width: 20px; /* Adjust the size of the icons */
+  height: auto;
+}
+@media only screen and (max-width: 480px) {
+  .column {
+  flex : 0 0 calc(100% - 20px);
+  max-width : calc(100% - 20px);
+  }
+  }
