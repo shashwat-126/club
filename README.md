@@ -1,8 +1,6 @@
 Welcome to the RIT STUDENT CLUB Website Repository!
 This repository contains the source code for the info website of the STUDENT CLUB at RIT.
 
-Getting Started
-
 This website is built using  HTML, CSS,. 
 
 To get started with contributing to the website, you'll need the following:-
