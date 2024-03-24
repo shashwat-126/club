@@ -27,6 +27,6 @@ You've added comments to explain your changes (if applicable)
 You've tested your changes thoroughly
 
 Contact:-
-For any questions or suggestions regarding the website, feel free to open an issue on this repository or contact the club via [email address or other communication method].
+For any questions or suggestions regarding the website, feel free to open an issue on this repository or contact the club via email. it is available on website
 
 
