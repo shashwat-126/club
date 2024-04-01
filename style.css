@@ -109,6 +109,13 @@ h1, h2, h3 {
   width: 20px; /* Adjust the size of the icons */
   height: auto;
 }
+.feesocial-icons {
+  display: flex; /* Make the icons sit next to each other */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  gap: 10px; /* Add space between the icons using gap */
+}
+
 @media only screen and (max-width: 480px) {
   .column {
   flex : 0 0 calc(100% - 20px);
