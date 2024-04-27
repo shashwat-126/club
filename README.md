@@ -25,15 +25,16 @@ The repository is organized as follows:
    ```bash
    git clone https://github.com/shashwat-ku/club.git
 
-Pull Request Checklist
+## Pull Request Checklist
 Before submitting your pull request, please ensure:
 
-Your code is formatted consistently.
-You've added comments to explain significant changes (if applicable).
-You've thoroughly tested your changes to ensure they work as expected.
-Contact
+- Your code is formatted consistently.
+- You've added comments to explain significant changes (if applicable).
+- You've thoroughly tested your changes to ensure they work as expected.
+
+## Contact
 If you have any questions or suggestions regarding the website or the contribution process, please feel free to:
 
-Open an issue on this repository.
-Contact the club via email (available on the website).
-Happy contributing!
+- Open an issue on this repository.
+- Contact the club via email (available on the website).
+- Happy contributing!
