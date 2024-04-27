@@ -24,8 +24,10 @@ The repository is organized as follows:
 
    ```bash
    git clone https://github.com/shashwat-ku/club.git
+   #Add your changes to the staging area:
+   git add .
 
-###Pull Request Checklist
+Pull Request Checklist
 Before submitting your pull request, please ensure:
 
 Your code is formatted consistently.
