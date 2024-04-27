@@ -55,4 +55,8 @@ If you have any questions or suggestions regarding the website or the contributi
 
 - Open an issue on this repository.
 - Contact the club via email (available on the website).
-- Happy contributing!
+
+##  Happy contributing!
+ ```css
+You can copy and paste this Markdown template into a `CONTRIBUTING.md` file within your repository. This file will provide clear instructions for contributors on how to fork, clone, make changes, and open pull requests to contribute to your RIT STUDENT CLUB website project.
+
