@@ -1,32 +1,39 @@
-Welcome to the RIT STUDENT CLUB Website Repository!
-This repository contains the source code for the info website of the STUDENT CLUB at RIT.
+# Contributing to RIT STUDENT CLUB Website
 
-This website is built using  HTML, CSS,. 
+Welcome to the RIT STUDENT CLUB Website repository! We appreciate your interest in contributing to our website. Please follow these guidelines to get started.
 
-To get started with contributing to the website, you'll need the following:-
-A text editor or IDE for coding (e.g., Visual Studio Code, Sublime Text)
-Basic understanding of html & CSS.
+## Getting Started
 
-The project is organized as follows:-
-index.html: The main HTML file for the website
-css folder: Contains all the Cascading Style Sheets (CSS) files for styling
+To contribute to this project, you'll need:
 
-Contributing:-
-We welcome contributions from anyone interested in improving the website! Here's how to get involved:
+- A text editor or IDE for coding (e.g., Visual Studio Code)
+- Basic understanding of HTML & CSS
 
-1.Fork this repository on GitHub
-2.Clone your forked repository to your local machine
-3.Make your changes and commit them
-4.Push your changes to your forked repository
-5.Open a pull request on the original repository
+### Project Structure
 
-Before submitting a pull request, please make sure:
+The repository is organized as follows:
 
-You've formatted your code consistently
-You've added comments to explain your changes (if applicable)
-You've tested your changes thoroughly
+- `index.html`: The main HTML file for the website
+- `css/`: Folder containing all the CSS files for styling
 
-Contact:-
-For any questions or suggestions regarding the website, feel free to open an issue on this repository or contact the club via email. it is available on website
+## How to Contribute
 
+1. **Fork the Repository**: Click on the "Fork" button at the top-right corner of this repository on GitHub to create your own copy.
 
+2. **Clone Your Fork**: Clone the repository to your local machine using Git.
+
+   ```bash
+   git clone https://github.com/shashwat-ku/club.git
+
+Pull Request Checklist
+Before submitting your pull request, please ensure:
+
+Your code is formatted consistently.
+You've added comments to explain significant changes (if applicable).
+You've thoroughly tested your changes to ensure they work as expected.
+Contact
+If you have any questions or suggestions regarding the website or the contribution process, please feel free to:
+
+Open an issue on this repository.
+Contact the club via email (available on the website).
+Happy contributing!
