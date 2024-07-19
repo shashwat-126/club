@@ -20,11 +20,37 @@
         <br>
         <br>
         <div class="feed" style="text-align:center;"> <strong>LATEST EVENT</strong><br>
-          <ul>
- <li>
-                <div class="post">
-                  <p style="text-align:center;"><bold>No Event Schedule</bold></p>
-                </div>
+         
+
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'ClubEvents')">DECA Clubs</button>
+            <button class="tablinks" onclick="openCity(event, 'TechEvents')">Departmental Clubs</button>
+            <button class="tablinks" onclick="openCity(event, 'Cul')">Cultural Events</button>
+          </div>
+          
+          <div id="ClubEvents" class="tabcontent">
+            <h3>DECA Clubs</h3>
+            <p>No Event Schedule right Now..</p>
+          </div>
+          
+          <div id="TechEvents" class="tabcontent">
+          <h3>Departmental Clubs</h3>
+          <p>No Event Schedule right Now..</p>
+          <!--<div class="post">
+            <h4>QUANTUM COMPUTING</h4>
+            <h5>IEEE-RITB</h5>
+            <div class="feesocial-icons">
+              <img src="loc.png" alt="loc"><p>ONLINE MODE</p><br>
+              <img src="date.png" alt="loc"><p>16<sup>th</sup> April 2024 @ 08:00 PM</p><br>
+              <a href="https://forms.gle/zn3RM2WCw9613ypY7"><img src="external-link.png" alt="INSTA"></a>
+          </div>-->
+          </div>
+          
+          <div id="Cul" class="tabcontent">
+            <h3>Cultural Events</h3>
+            <p>No Event Schedule right Now..</p>
+        </div>
+
                 <!-- <div class="post">
                     <h2>CELESTIA</h2>
                     <h2>TED<sup>x</sup> MSRIT </h2>
@@ -59,8 +85,6 @@
                   <img src="date.png" alt="loc"><p>16<sup>th</sup> April 2024 @ 08:00 PM</p><br>
                   <a href="https://forms.gle/zn3RM2WCw9613ypY7"><img src="external-link.png" alt="INSTA"></a>
               </div> -->
-             </li>
-          </ul>
       </div>
 </body>
 </html>
@@ -68,11 +92,27 @@
   <label for="website">Help Us Improve the Website?</label>
       <p>We use GitHub for development. Suggest edits by creating an issue <a href="https://github.com/shashwat-ku/club">here</a>.</p>
       <p> How do you even communicate with carrier pigeons these days? <a href="mailto:shashwat@shashwat.world">here</a> </p> 
-      <p>What clubs or activities did you enjoy most in college?<a href="mailto:shashwat@shashwat.world?subject=Request%20to%20upadate%20club%20activity">Drop New Activity</a></p>
+      <p>What clubs or activities did you enjoy most in college?<a href="mailto:shashwat@shashwat.world?subject=Request%20to%20update%20club%20activity">Drop New Activity</a></p>
       <div class="footer-copyright">
         <p><a href ="disc.html">Copyright &copy; 2024 RIT STUDNET CLUBS. All Rights Reserved.</a></p>
       </div>
     </footer>
     <p style="text-align:center;"><bold>Lift it up ! Crafted with ❤️ in RIT</bold></p>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
 </body>
 </html>
