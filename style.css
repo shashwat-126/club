@@ -10,6 +10,7 @@ h1, h2, h3 {
 
 /*navgation*/
 .topnav {
+  border: 1px solid #ccc;
     background-color: transparent; /*  background color */
     overflow: hidden; /* Clip content to prevent horizontal overflow */
     position:relative; /* Fix the navbar to the top of the page */
@@ -19,8 +20,8 @@ h1, h2, h3 {
   }
   
   .topnav a {
-    float: left; /* Float links to the left */
-    color: black; /* White text color */
+    float:left; /* Float links to the left */
+    color: blue; /* White text color */
     text-align: center; /* Center text within links */
     padding: 14px 16px; /* Add some padding to links */
     text-decoration: none; /* Remove underline from links */
@@ -52,9 +53,16 @@ h1, h2, h3 {
 }
 /* club image*/
 .img1 {
-    width: 100%;
+    /*width: 100%;
     max-width: 200px;
-    height: auto;
+    height: auto;*/
+    border-radius: 25px;
+  
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
 }
   .img1:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -122,3 +130,39 @@ h1, h2, h3 {
   max-width : calc(100% - 20px);
   }
   }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
