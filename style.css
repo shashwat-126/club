@@ -10,13 +10,13 @@ h1, h2, h3 {
 
 /*navgation*/
 .topnav {
-  border: 1px solid #ccc;
+ 
     background-color: transparent; /*  background color */
     overflow: hidden; /* Clip content to prevent horizontal overflow */
     position:relative; /* Fix the navbar to the top of the page */
     top: 0;
     width: 100%; /* Make the navbar full width */
-    padding: 10px 20px; /* Add some padding for spacing */
+    padding: 14px 16px; /* Add some padding for spacing */
   }
   
   .topnav a {
@@ -37,6 +37,46 @@ h1, h2, h3 {
     background-color: #ddd; /*  background on hover */
     color: black; /*  text color on hover */
   }
+
+/* Style tab links */
+.tablink {
+  background-color: transparent;
+  color: blue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink a.active { /* Style for the active link */
+  background-color: #ddd; /* background for active link */
+  color: black; /* text color for active link */
+}
+
+.tablink a:hover:not(.active) { /* Hover effect for non-active links */
+  background-color: #ddd; /*  background on hover */
+  color: black; /*  text color on hover */
+}
+
+.tablink:hover {
+  background-color: pink;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#All {background-color: transparent;}
+#Tech {background-color: transparent;}
+#Club {background-color: transparent;}
+#Cul {background-color: transparent;}
+
+
   
 /*row & col*/
 .row {
@@ -51,6 +91,8 @@ h1, h2, h3 {
     margin: 05px;
     text-align: center;
 }
+
+
 /* club image*/
 .img1 {
     /*width: 100%;
@@ -67,8 +109,9 @@ h1, h2, h3 {
   .img1:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }  
+
+
 /*footer*/
-/* Overall footer styles */
 .footer {
     background-color: transparent; /* color background */
     padding: 20px 0; /* Top and bottom padding */
@@ -131,38 +174,4 @@ h1, h2, h3 {
   }
   }
 
-  /* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: transparent;
-}
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 24px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-}
