@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to RIT STUDENT CLUBS </title>
+    <link rel="icon" href="web.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,35 +22,32 @@
         <br>
         <div class="feed" style="text-align:center;"> <strong>LATEST EVENT</strong><br>
          
+          <button class="tablink" onclick="openPage('All', this, 'pink')" id="defaultOpen">All Events</button>
+          <button class="tablink" onclick="openPage('Tech', this, 'pink')">Tech Events</button>
+          <button class="tablink" onclick="openPage('Club', this, 'pink')">Club Events</button>
+          <button class="tablink" onclick="openPage('Cul', this, 'pink')">Cultural Events</button>
 
-          <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'ClubEvents')">DECA Clubs</button>
-            <button class="tablinks" onclick="openCity(event, 'TechEvents')">Departmental Clubs</button>
-            <button class="tablinks" onclick="openCity(event, 'Cul')">Cultural Events</button>
-          </div>
-          
-          <div id="ClubEvents" class="tabcontent">
-            <h3>DECA Clubs</h3>
-            <p>No Event Schedule right Now..</p>
-          </div>
-          
-          <div id="TechEvents" class="tabcontent">
-          <h3>Departmental Clubs</h3>
-          <p>No Event Schedule right Now..</p>
-          <!--<div class="post">
-            <h4>QUANTUM COMPUTING</h4>
-            <h5>IEEE-RITB</h5>
-            <div class="feesocial-icons">
-              <img src="loc.png" alt="loc"><p>ONLINE MODE</p><br>
-              <img src="date.png" alt="loc"><p>16<sup>th</sup> April 2024 @ 08:00 PM</p><br>
-              <a href="https://forms.gle/zn3RM2WCw9613ypY7"><img src="external-link.png" alt="INSTA"></a>
-          </div>-->
-          </div>
-          
-          <div id="Cul" class="tabcontent">
-            <h3>Cultural Events</h3>
-            <p>No Event Schedule right Now..</p>
+        <div id="Tech" class="tabcontent">
+           <h3>No Event Scheduled</h3>
+           <p>You are also requested to kindly visit college notice boards</p>
         </div>
+
+        <div id="All" class="tabcontent">
+          <h3>No Event Scheduled</h3>
+          <p>You are also requested to kindly visit college notice boards</p>
+        </div>
+
+        <div id="Club" class="tabcontent">
+           <h3>No Event Scheduled</h3>
+          <p>You are also requested to kindly visit college notice boards</p>
+        </div>
+
+       <div id="Cul" class="tabcontent">
+           <h3>No Event Scheduled</h3>
+           <p>You are also requested to kindly visit college notice boards</p>
+       </div> 
+
+      </div>
 
                 <!-- <div class="post">
                     <h2>CELESTIA</h2>
@@ -99,20 +97,24 @@
     </footer>
     <p style="text-align:center;"><bold>Lift it up ! Crafted with ❤️ in RIT</bold></p>
 
+   
     <script>
-      function openCity(evt, cityName) {
+      function openPage(pageName,elmnt,color) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].style.backgroundColor = "";
         }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
       }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
       </script>
 </body>
 </html>
