@@ -1,11 +1,15 @@
 /*headings*/
 body {
-    margin: 0;
+    margin: 100;
     font-family: Arial, sans-serif;
+    background-image: url("bg.jpg");
 }
 
-h1, h2, h3 {
+h1, h2 {
     text-align: center;
+}
+h3 {
+  text-align: center;
 }
 
 /*navgation*/
@@ -175,3 +179,4 @@ h1, h2, h3 {
   }
 
 
+ 
